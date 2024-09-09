@@ -72,7 +72,7 @@ public class PersonPickerImpl implements PersonPicker{
 
         var collapsedBreaks = new ArrayList<AssignedBreak>();
 
-        while (!waveFunction.isEmpty() ||
+        while (!waveFunction.isEmpty() &&
                 waveFunction.stream()
                         .filter(breakSuperposition -> breakSuperposition.getPossiblePersons().isEmpty())
                         .toList()
